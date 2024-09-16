@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Угадай число</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.css">
+
+    <!-- FA5 CSS -->
+    <link rel="stylesheet" href="./assets/fa/css/all.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!-- JS -->
+    <script src="./assets/js/app.js"></script>
+
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="mb-4 d-flex justify-content-center align-items-center">Угадай число от 1 до 100</h1>
+        <h2 class="d-flex justify-content-center">Осталось попыток: <output id="tryCounter">10</output></h2>
+
+        <img class="rounded mx-auto d-block" src="./assets/img/d-koi-jKZdHpGFpjc-unsplash.jpg" height="200" alt="Question">
+
+        <!-- Input Data Form -->
+        <div class='row row-cols-1 row-cols-lg-1 my-4'>
+            <div class="form-group">
+              <label for="userInput">Ваш вариант:</label>
+              <input type="number" class="form-control" id="userInput" min="1" max="100" value="3" step="1">
+            </div>
+
+            <div class="container center d-flex justify-content-center align-items-center mt-3 mb-3">
+              <button id="submit" onclick="play()">Дать ответ</button>
+            </div>
+
+              <h1>Ваш вариант: <output id="commentOutput">-</output></h1>
+              <p id="commentOutput2"></p>
+            </div>
+
+    
+</body>
+</html>
