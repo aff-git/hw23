@@ -6,7 +6,7 @@ function play() {
     let tryCount = +tryCounter.value;
     if (tryCount === 0) {
         alert(`Игра окончена. Вы проиграли. Моё число ${randomNum}.`);
-        output = "Игра окончена. Обновите страницу, чтобы сыграть ещё раз.";
+        output = "Игра окончена. Обновите страницу и сыграйте ещё раз.";
         commentOutput2.innerHTML = "Подсказка: " + output;
         return;
     }     
@@ -18,7 +18,6 @@ function play() {
     alert("Вы победили. Это моё число.");
     output = "Игра окончена. Поздравляю с победой!";
     commentOutput2.innerHTML = "Подсказка: " + output;
-
     return;
    } else if (userNum > randomNum) {
     output = `Загаданное число меньше Вашего ${userNum}`
