@@ -1,4 +1,4 @@
-let randomNum = +Math.round(Math.random() * 100);
+let randomNum = +Math.floor(Math.random() * 100) + 1;
 
 function play() {
     let userNum = +userInput.value;
