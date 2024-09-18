@@ -2,6 +2,15 @@ let randomNum = +Math.round(Math.random() * 100);
 
 function play() {
     let userNum = +userInput.value;
+    
+    if (userNum > 100) {
+        alert("Число должно быть от 1 до 100.");
+        return;
+    } else if (userNum < 0) {
+        alert("Загаданное число положительное.");
+        return;
+    }
+
     let output;
     let tryCount = +tryCounter.value;
     if (tryCount === 0) {
